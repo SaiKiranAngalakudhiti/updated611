@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.40c4c3c6.css",
+    "main.js": "/static/js/main.95a1988d.js",
+    "static/js/787.2404f654.chunk.js": "/static/js/787.2404f654.chunk.js",
+    "static/media/sweater.png": "/static/media/sweater.0dd35e72e0e8ad11b692.png",
+    "static/media/snow.png": "/static/media/snow.a1bab4977c6b746bbe1b.png",
+    "static/media/axios.cjs": "/static/media/axios.ed9a1e9804f9a76743bb.cjs",
+    "static/media/wind (1).png": "/static/media/wind (1).786090a55742b01f2b6e.png",
+    "static/media/socks.png": "/static/media/socks.ca82d48b8c6d3cec08e4.png",
+    "static/media/long-sleeve.png": "/static/media/long-sleeve.bc1ff0ff0d9749dfdf4b.png",
+    "static/media/cloudy.png": "/static/media/cloudy.80594e9b1f9aa5b03c81.png",
+    "static/media/temperature.png": "/static/media/temperature.7d2ca867c7b28482b874.png",
+    "index.html": "/index.html",
+    "main.40c4c3c6.css.map": "/static/css/main.40c4c3c6.css.map",
+    "main.95a1988d.js.map": "/static/js/main.95a1988d.js.map",
+    "787.2404f654.chunk.js.map": "/static/js/787.2404f654.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40c4c3c6.css",
+    "static/js/main.95a1988d.js"
+  ]
+}
