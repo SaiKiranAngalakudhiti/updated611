@@ -2,8 +2,8 @@ const config = {
     db: {
       host: "localhost",
       user: "root",
-      password: "Dm122448@",
-      database: "what_should_i_wear",
+      password: "root",
+      database: "testdb",
       timezone: 'utc'
     }
   };
