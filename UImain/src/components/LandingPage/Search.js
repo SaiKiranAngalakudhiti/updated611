@@ -33,7 +33,7 @@ const Search = (props) => {
         localStorage.setItem("searchip", inputs.searchip);
         props.setSearchip1(inputs.searchip);
         try {
-            let res = await axios.get("http://localhost:4000/weatherAPI/getWeatherData/" + inputs.searchip);
+            let res = await axios.get("http://3.82.160.30:4000/weatherAPI/getWeatherData/" + inputs.searchip);
             res.data.sort(function (a, b) {
                 return day_list.indexOf(a.day) - day_list.indexOf(b.day);
             });

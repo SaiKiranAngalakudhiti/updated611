@@ -7,28 +7,28 @@ function TableData() {
   const [clothingType, setClothingType] = useState([]);
   const [clothCategory, setClothCategory] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/clothCatAPI/getClothCategory")
+    fetch("http://3.82.160.30:4000/clothCatAPI/getClothCategory")
       .then((res) => res.json())
       .then((data) => {
         setClothCategory(data);
       });
   }, []);
   useEffect(() => {
-    fetch("http://localhost:4000/clothAPI/getClothing")
+    fetch("http://3.82.160.30:4000/clothAPI/getClothing")
       .then((res) => res.json())
       .then((data) => {
         setClothingType(data);
       });
   }, []);
   useEffect(() => {
-    fetch("http://localhost:4000/recommendAPI/getRecommends")
+    fetch("http://3.82.160.30:4000/recommendAPI/getRecommends")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
       });
   }, []);
   const fetchRecord = () => {
-    fetch("http://localhost:4000/recommendAPI/getRecommends")
+    fetch("http://3.82.160.30:4000/recommendAPI/getRecommends")
       .then((res) => res.json())
       .then((data) => {
         setData(data);

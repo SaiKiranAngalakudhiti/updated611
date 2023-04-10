@@ -82,7 +82,7 @@ class SignUp extends Component{
         e.preventDefault();
         if(this.handleValidation()){
           try {
-            const response =  await fetch('http://localhost:4000/adminAPI/newAdmin',{
+            const response =  await fetch('http://3.82.160.30:4000/adminAPI/newAdmin',{
               method: 'POST',
               body: JSON.stringify({
                 // Add parameters here

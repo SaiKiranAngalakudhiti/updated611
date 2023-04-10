@@ -47,7 +47,7 @@ function DataTable({ tableData, fetchRecord }) {
     const dataToAdd = {
       categoryName: values.categoryName,
     };
-    await fetch("http://localhost:4000/clothCatAPI/addClothingCategory", {
+    await fetch("http://3.82.160.30:4000/clothCatAPI/addClothingCategory", {
       method: "POST",
       body: JSON.stringify({
         category_name: values.categoryName,
@@ -169,7 +169,7 @@ function DataTable({ tableData, fetchRecord }) {
   };
   const confirmDelete = () => {
     fetch(
-      `http://localhost:4000/clothCatAPI/deleteClothingCategory/${itemId}`,
+      `http://3.82.160.30:4000/clothCatAPI/deleteClothingCategory/${itemId}`,
       {
         method: "DELETE",
         headers: {
@@ -209,7 +209,7 @@ function DataTable({ tableData, fetchRecord }) {
   };
   const handleUpdate = async (event) => {
     event.preventDefault();
-    await fetch("http://localhost:4000/clothCatAPI/editClothCategory", {
+    await fetch("http://3.82.160.30:4000/clothCatAPI/editClothCategory", {
       method: "PUT",
       body: JSON.stringify({
         clothing_category_id: updateAbleId,

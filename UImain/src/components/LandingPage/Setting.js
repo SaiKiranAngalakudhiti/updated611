@@ -16,7 +16,7 @@ const Settings = (props) => {
     useEffect(() => {
         async function getpreferences() {
             try {
-                let res = await axios.get("http://localhost:4000/prefAPI/getPreferenceSport");
+                let res = await axios.get("http://3.82.160.30:4000/prefAPI/getPreferenceSport");
                 set_pref(res.data)
             } catch (err) {
                 console.log(err)

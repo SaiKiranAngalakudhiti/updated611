@@ -69,7 +69,7 @@ function DataTable({ tableData, clothCategory, fetchRecord }) {
     formData.append("clothing_type", values.clothingName);
     formData.append("clothing_category_id", values.categoryName);
 
-    await fetch("http://localhost:4000/clothAPI/addClothing", {
+    await fetch("http://3.82.160.30:4000/clothAPI/addClothing", {
       method: "POST",
       body: formData,
       headers: {
@@ -216,7 +216,7 @@ function DataTable({ tableData, clothCategory, fetchRecord }) {
     setOpen(false);
   };
   const confirmDelete = () => {
-    fetch(`http://localhost:4000/clothAPI/deleteClothing/${itemId}`, {
+    fetch(`http://3.82.160.30:4000/clothAPI/deleteClothing/${itemId}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -259,7 +259,7 @@ function DataTable({ tableData, clothCategory, fetchRecord }) {
     formData.append("clothing_id", updateAbleId);
     formData.append("clothing_type", values.clothingName);
     formData.append("clothing_category_id", values.categoryName);
-    await fetch("http://localhost:4000/clothAPI/editClothing", {
+    await fetch("http://3.82.160.30:4000/clothAPI/editClothing", {
       method: "PUT",
       body: formData,
       headers: {

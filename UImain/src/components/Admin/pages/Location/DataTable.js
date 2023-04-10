@@ -86,7 +86,7 @@ function DataTable({ tableData, fetchRecord }) {
     }
     console.log(values.IsAvailable,"")
 console.log(values.IsAvailable === false ? 'No' : 'Yes',"")
-    await fetch("http://localhost:4000/locationAPI/addLocation", {
+    await fetch("http://3.82.160.30:4000/locationAPI/addLocation", {
       method: "POST",
       body: JSON.stringify(dataByLocation?.length > 0 ? dataByLocation : dataByPostalCode),
       headers: {
@@ -276,7 +276,7 @@ console.log(values.IsAvailable === false ? 'No' : 'Yes',"")
   }, [tableData]);
   
   const confirmDelete = () => {
-    fetch(`http://localhost:4000/locationAPI/deleteLocation/${itemId}`, {
+    fetch(`http://3.82.160.30:4000/locationAPI/deleteLocation/${itemId}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -315,7 +315,7 @@ console.log(values.IsAvailable === false ? 'No' : 'Yes',"")
   };
   const handleUpdate = async (event) => {
     event.preventDefault();
-    await fetch("http://localhost:4000/locationAPI/editLocation", {
+    await fetch("http://3.82.160.30:4000/locationAPI/editLocation", {
       method: "PUT",
       body: JSON.stringify({
         location_id: updateAbleId,

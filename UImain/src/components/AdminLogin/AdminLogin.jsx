@@ -61,7 +61,8 @@ class AdminLogin extends Component{
         // const hashedPassword = bcrypt.hashSync(this.state.fields["password"],10);
         // console.log(hashedPassword);
         try {
-          const response =  await fetch('http://localhost:4000/testAPI',{
+          //const response =  await fetch('http://localhost:4000/testAPI',{
+            const response =  await fetch('http://3.82.160.30:4000/testAPI',{
             method: 'POST',
             body: JSON.stringify({
               // Add parameters here

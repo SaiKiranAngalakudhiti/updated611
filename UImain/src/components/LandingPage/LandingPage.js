@@ -53,7 +53,7 @@ function LandingPage() {
 
   async function get_data_for_info1(event) {
     try {
-      let res = await axios.get("http://localhost:4000/weatherAPI/getWeatherData/" + searchip);
+      let res = await axios.get("http://3.82.160.30:4000/weatherAPI/getWeatherData/" + searchip);
       set_weather_data(res.data);
       res.data.sort(function (a, b) {
         return day_list.indexOf(a.day) - day_list.indexOf(b.day);
@@ -110,7 +110,7 @@ function LandingPage() {
       tempday = weekday[curr_day_idx];
     }
     try {
-      let res = await axios.get("http://localhost:4000/clothAPI/getClothing/" + searchip + "/" + pref + "/" + tempday);
+      let res = await axios.get("http://3.82.160.30:4000/clothAPI/getClothing/" + searchip + "/" + pref + "/" + tempday);
       set_clothes_data(res.data);
 
       if (res.data === "EMPTY") {

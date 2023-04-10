@@ -5,7 +5,7 @@ import DataTable from "./DataTable";
 function TableData() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/prefAPI/getPreference")
+    fetch("http://3.82.160.30:4000/prefAPI/getPreference")
       .then((res) => res.json())
       .then((data) => {
         setData(data);

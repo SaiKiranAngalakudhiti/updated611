@@ -5,7 +5,7 @@ import DataTable from "./DataTable";
 function TableData() {
   const [data, setData] = useState([]);
   const fetchRecord = () => {
-    fetch("http://localhost:4000/locationAPI/getLocations")
+    fetch("http://3.82.160.30:4000/locationAPI/getLocations")
       .then((res) => res.json())
       .then((data) => {
         setData(data);

@@ -72,7 +72,7 @@ function DataTable({
       },
       "datattat"
     );
-    await fetch("http://localhost:4000/recommendAPI/addRecommend", {
+    await fetch("http://3.82.160.30:4000/recommendAPI/addRecommend", {
       method: "POST",
       body: JSON.stringify({
         clothing_id: values.clothingType,
@@ -221,7 +221,7 @@ function DataTable({
     setOpenItemDialogue(false);
   };
   const confirmDelete = () => {
-    fetch(`http://localhost:4000/recommendAPI/deleteRecommend/${itemId}`, {
+    fetch(`http://3.82.160.30:4000/recommendAPI/deleteRecommend/${itemId}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -259,7 +259,7 @@ function DataTable({
   };
   const handleUpdate = async (event) => {
     event.preventDefault();
-    await fetch("http://localhost:4000/recommendAPI/editRecommend", {
+    await fetch("http://3.82.160.30:4000/recommendAPI/editRecommend", {
       method: "PUT",
       body: JSON.stringify({
         recommended_id: updateAbleId,
@@ -288,7 +288,7 @@ function DataTable({
 
   useEffect(() => {
   
-    fetch(`http://localhost:4000/clothAPI/getClothingByCategory?id=${values.clothinCategory}`)
+    fetch(`http://3.82.160.30:4000/clothAPI/getClothingByCategory?id=${values.clothinCategory}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data,"data")

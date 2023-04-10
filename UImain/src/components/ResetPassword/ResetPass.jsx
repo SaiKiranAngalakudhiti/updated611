@@ -36,7 +36,7 @@ class ResetPass extends Component{
     //   },
     // } = this.props;
     try {
-      const response =  await fetch('http://localhost:4000/adminAPI/reset',{
+      const response =  await fetch('http://3.82.160.30:4000/adminAPI/reset',{
         method: 'POST',
         body: JSON.stringify({
           // Add parameters here
@@ -104,7 +104,7 @@ class ResetPass extends Component{
     //   },
     // } = this.props;
     try {
-      const response =  await fetch('http://localhost:4000/adminAPI/checkUser',{
+      const response =  await fetch('http://3.82.160.30:4000/adminAPI/checkUser',{
         method: 'POST',
         body: JSON.stringify({
           // Add parameters here
@@ -121,7 +121,7 @@ class ResetPass extends Component{
       const json =  await response.json();
       if(json.message === 'user exists in db'){
         try {
-            const responseUpdate =  await fetch('http://localhost:4000/adminAPI/UpdatePassword',{
+            const responseUpdate =  await fetch('http://3.82.160.30:4000/adminAPI/UpdatePassword',{
                 method: 'PUT',
                 body: JSON.stringify({
                 // Add parameters here

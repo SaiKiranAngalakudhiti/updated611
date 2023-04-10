@@ -7,7 +7,7 @@ function TableData() {
   const [clothCategory, setClothCategory] = useState([]);
 
   const fetchRecord = () => {
-    fetch("http://localhost:4000/clothAPI/getClothing")
+    fetch("http://3.82.160.30:4000/clothAPI/getClothing")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -17,7 +17,7 @@ function TableData() {
     fetchRecord();
   }, []);
   useEffect(() => {
-    fetch("http://localhost:4000/clothCatAPI/getClothCategory")
+    fetch("http://3.82.160.30:4000/clothCatAPI/getClothCategory")
       .then((res) => res.json())
       .then((data) => {
         setClothCategory(data);

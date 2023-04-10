@@ -55,7 +55,7 @@ class ForgotPassword extends Component{
         if(this.handleValidation()){
           //CHECK IF THE USER EXISTS
           try {
-              const response =  await fetch('http://localhost:4000/forgotPassAPI/checkUser',{
+              const response =  await fetch('http://3.82.160.30:4000/forgotPassAPI/checkUser',{
                 method: 'POST',
                 body: JSON.stringify({
                   // Add parameters here
@@ -69,7 +69,7 @@ class ForgotPassword extends Component{
               const json =  await response.json();
               if(json.message == 'valid data'){
                   try {
-                      const jsonUpdate =  await fetch('http://localhost:4000/forgotPassAPI/forgotPassword',{
+                      const jsonUpdate =  await fetch('http://3.82.160.30:4000/forgotPassAPI/forgotPassword',{
                           method: 'PUT',
                           body: JSON.stringify({
                           // Add parameters here
@@ -108,7 +108,7 @@ class ForgotPassword extends Component{
           }
           // try {
           //   const response = await axios.post(
-          //     'http://localhost:4000/testAPI',
+          //     'http://3.82.160.30:4000/testAPI',
           //     {
           //       email:this.state.fields.email,
           //     },
@@ -137,7 +137,7 @@ class ForgotPassword extends Component{
       //   e.preventDefault();
       //   if(this.handleValidation()){
       //       try {
-      //           const response =  await fetch('http://localhost:4000/testAPI',{
+      //           const response =  await fetch('http://3.82.160.30:4000/testAPI',{
       //             method: 'POST',
       //             body: JSON.stringify({
       //               // Add parameters here
@@ -151,7 +151,7 @@ class ForgotPassword extends Component{
       //           const json =  await response.json();
       //           if(json.message == 'valid data'){
       //               try {
-      //                   const responseUpdate =  await fetch('http://localhost:4000/testAPI',{
+      //                   const responseUpdate =  await fetch('http://3.82.160.30:4000/testAPI',{
       //                       method: 'PUT',
       //                       body: JSON.stringify({
       //                       // Add parameters here
